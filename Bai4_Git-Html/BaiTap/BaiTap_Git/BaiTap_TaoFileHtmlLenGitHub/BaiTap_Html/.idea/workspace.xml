@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea4d402-b9ce-4841-bfa5-68cc542f0b3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TaoDanhSach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ThucHanhHtml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanhHtml/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CVcanhan.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CVcanhan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaoCV_beauty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaoCVwithCss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvcopy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -34,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -46,11 +52,22 @@
       <option name="presentableId" value="Default" />
       <updated>1609388515932</updated>
       <workItem from="1609388517197" duration="70000" />
-      <workItem from="1609396522528" duration="889000" />
+      <workItem from="1609396522528" duration="1602000" />
+      <workItem from="1609398180152" duration="9733000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1609398177727">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1609398177727" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1609399448693">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1609399448693" />
   </component>
 </project>
