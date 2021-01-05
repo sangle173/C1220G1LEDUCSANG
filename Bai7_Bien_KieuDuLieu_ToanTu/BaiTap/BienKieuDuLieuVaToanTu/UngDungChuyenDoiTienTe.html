@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung chuyen doi tien te</title>
+</head>
+<body>
+    <table>
+       <tr>
+           <th>Amount</th>
+           <th>From currency</th>
+           <th>To currency</th>
+       </tr>
+        <tr>
+            <td>
+                <input type="number" name="amount" id="frm1" >
+            </td>
+            <td>
+                <select name="currency" id="currency">
+                    <option value="Vietnamese">Vietnamese</option>
+                    <option value="USD">USD</option>
+<!--                    <option value="Japanese">Japanese</option>-->
+                </select>
+            </td>
+            <td>
+                <select name="toCurrency" id="toCurrency">
+                    <option value="toVietnamese">Vietnamese</option>
+                    <option value="toUSD">USD</option>
+<!--                    <option value="toJapanese">Japanese</option>-->
+                </select>
+            </td>
+            <td>
+                <button onclick="myFunction()">Convert</button>
+            </td>
+        </tr>
+    </table>
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <td>result :</td>-->
+<!--            <td id="result"></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+    <p id="result"></p>
+<script>
+    function myFunction() {
+      let amount = document.getElementById('frm1').value;
+      // alert(amount);
+      let currency = document.getElementById('currency').value;
+      // alert(currency);
+      let toCurrency= document.getElementById('toCurrency').value;
+      // alert(toCurrency);
+        let result;
+      if (currency =="Vietnamese"&& toCurrency=="toUSD"){
+         result= parseInt(amount)/25000 ;
+      }
+      if (currency =="USD"&& toCurrency=="toVietnamese"){
+            result= parseInt(amount)*25000 ;
+        }
+        document.getElementById('result').innerText = " Result : " + result;
+    }
+</script>
+</body>
+</html>
