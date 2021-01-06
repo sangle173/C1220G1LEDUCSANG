@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tinh</title>
+</head>
+<body>
+<form action="#">
+    <input type="number" id="num1">
+    <input type="number" id="num2"> <br> <br>
+    <button id="Addition" type="button" onclick="addition()">Addition (+)</button>
+    <button id="Subtraction" type="button" onclick="sub()">Subtraction (-)</button>
+    <button id="Multiplication" type="button" onclick="multiplication()">Multiplication (x)</button>
+    <button id="Division" type="button" onclick="devision()">Division (/)</button>
+    <p id="result"></p>
+</form>
+<script>
+
+    function addition() {
+        let num1= document.getElementById('num1').value;
+        let num2= document.getElementById('num2').value;
+        let result= parseInt(num1)+ parseInt(num2);
+        document.getElementById('result').innerText='Result: '+ result;
+    }
+    function sub() {
+        let num1= document.getElementById('num1').value;
+        let num2= document.getElementById('num2').value;
+        let result= parseInt(num1)- parseInt(num2);
+        document.getElementById('result').innerText='Result: '+ result;
+    }
+    function multiplication() {
+        let num1= document.getElementById('num1').value;
+        let num2= document.getElementById('num2').value;
+        let result= parseInt(num1)*parseInt(num2);
+        document.getElementById('result').innerText='Result: '+ result;
+    }
+    function devision() {
+        let num1= document.getElementById('num1').value;
+        let num2= document.getElementById('num2').value;
+        let result= parseInt(num1)/parseInt(num2);
+        document.getElementById('result').innerText='Result: '+ result;
+    }
+</script>
+</body>
+</html>
