@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    font-size: 25px;
+    font-family: Tahoma;
+}
+form{
+    margin: 10px auto;
+    width: 500px;
+
+}
+form fieldset{
+    border: 3px solid red;
+    background: aliceblue;
+    border-radius: 10px;
+}
+form legend{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+form table{
+    padding: 18px;
+}
+form table tr,td {
+    padding: 10px;
+}
+form table tr,td input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 5px;
+    outline: none;
+}
+form table td input:hover{
+    background-color: lightpink;
+}
+form table td select {
+    width: 200px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 20px;
+}
+form table td textarea{
+    width: 200px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+form table td select option{
+    text-align: center;
+    font-size: 20px;
+}
+form table td input{
+    font-size: 20px;
+}
+form fieldset button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: darkolivegreen;
+    box-shadow: gray 3px 3px 3px;
+    font-size: 30px;
+    outline: none;
+}
+.button{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    padding: 18px;
+}
