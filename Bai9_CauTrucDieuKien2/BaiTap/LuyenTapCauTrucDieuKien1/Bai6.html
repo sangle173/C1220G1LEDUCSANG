@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính hoa hông</title>
+</head>
+<body>
+<script>
+    // doanh số bán hàng 10.000.000-20.000.000- hoa hồng là 5%
+    // doanh số bán hàng 20.000.000-30.000.000- hoa hồng là 7%
+    // doanh số bán hàng 30.000.000-4.000.000- hoa hồng là 10%
+    // doanh số bán hàng trên 40.000.000- hoa hồng là 15%
+
+    let doanhSo=parseInt(prompt('mời nhập doanh số bán hàng tháng này:'));
+    if (doanhSo<10000000){
+        alert("không có hoa hồng");
+    }else if (doanhSo<20000000){
+        alert("hoa hồng là"+(doanhSo*(5/100)));
+    } else if (doanhSo<30000000){
+        alert('hoa hồng là '+ (doanhSo*(7/100)));
+    }else if (doanhSo<40000000){
+        alert('hoa hồng là :'+(doanhSo*(10/100)));
+    }else {
+        alert('hoa hồng là :'(doanhSo*(15/100)));
+    }
+
+</script>
+</body>
+</html>

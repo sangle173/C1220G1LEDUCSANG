@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let thuNhap=parseInt(prompt('Mời bạn nhập thu nhập của bạn (triệu)'));
+    let thueCaNhan;
+    if (thuNhap<3000000){
+        alert('không tính thuế');
+    }else if (thuNhap<+'vnd'){
+        thueCaNhan=thuNhap*(5/100);
+        alert('Thuế thu nhập là: '+thueCaNhan+'vnd');
+    }else if (thuNhap<10000000){
+        thueCaNhan=thuNhap*(10/100);
+        alert('Thuế thu nhập là: '+thueCaNhan+'vnd');
+    }else if (thuNhap<18000000){
+        thueCaNhan=thuNhap*(15/100);
+        alert('Thuế thu nhập là: '+thueCaNhan+'vnd');
+    }else if (thuNhap<32000000){
+        thueCaNhan=thuNhap*(20/100);
+        alert('Thuế thu nhập là: '+thueCaNhan+'vnd');
+    }else {
+        thueCaNhan=thuNhap*(30/100);
+        alert('Thuế thu nhập là: '+thueCaNhan+'vnd');
+    }
+</script>
+</body>
+</html>

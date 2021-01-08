@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="28cc52dc-7c62-42a3-b9a5-de626a7c393d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Bai4_Git-Html/BaiTap/BaiTap_Git/BaiTap_TaoFileHtmlLenGitHub/BaiTap_Html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai4_Git-Html/BaiTap/BaiTap_Git/BaiTap_TaoFileHtmlLenGitHub/BaiTap_Html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bai4_Git-Html/BaiTap/TaoDanhSach.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bai6_TongQuanJavaScript/ThucHanh/BaiTap_HienThiDauRa/BaiTap1_HienThiKetQuaBangAlert.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai6_TongQuanJavaScript/ThucHanh/BaiTap_HienThiDauRa/BaiTap1_HienThiKetQuaBangAlert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bai7_Bien_KieuDuLieu_ToanTu/BaiTap/BaiTapUngDungMayTinh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai7_Bien_KieuDuLieu_ToanTu/BaiTap/BaiTapUngDungMayTinh/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1mmKhS4k2NVRPM7ZRQBJQfyNx09" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CaseStudy" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28cc52dc-7c62-42a3-b9a5-de626a7c393d" name="Default Changelist" comment="" />
+      <created>1610093444677</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610093444677</updated>
+      <workItem from="1610093445983" duration="1608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1610095279582">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1610095279582" />
+  </component>
+</project>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+    let diemKt=parseInt(prompt('mời nhập điểm kiểm tra'));
+    let diemGk=parseInt(prompt('mời nhập điểm giữa kì'));
+    let diemCk=parseInt(prompt('mời nhập điểm cuối kì'));
+    if (diemKt>5&&diemGk>5&&diemCk>5){
+        if (diemGk<7&&diemCk<7&&diemKt<7){
+            alert('Học sinh Trung Bình');
+        }else if (diemKt<8&&diemGk<8<diemCk<8){
+            alert('học sinh khá');
+        }else {
+            alert('học sinh giỏi');
+        }
+
+    }else {
+        alert('học sinh yếu');
+    }
+</script>
+</body>
+</html>

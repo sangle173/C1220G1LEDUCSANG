@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá điện</title>
+</head>
+<body>
+<script>
+    let chuDien=parseInt(prompt('Mời nhập số chữ điện'));
+    let giaDien;
+    if (chuDien<0){
+        alert('Bạn nhập sai.vui lòng nhập lại!');
+    }else if (chuDien<50){
+        giaDien=chuDien*1678;
+        alert('Số tiền điện phải trả: '+giaDien+'vnd');
+    }else if (chuDien<100){
+        giaDien=chuDien*1734;
+        alert('Số tiền điện phải trả: '+giaDien+'vnd');
+    }else if (chuDien<200){
+        giaDien=chuDien*2014;
+        alert('Số tiền điện phải trả: '+giaDien+'vnd');
+    }else if (chuDien<300){
+        giaDien=chuDien*2536;
+        alert('Số tiền điện phải trả: '+giaDien+'vnd');
+    }else {
+        giaDien=chuDien*2900;
+        alert('Số tiền điện phải trả: '+giaDien+'vnd');
+    }
+</script>
+</body>
+</html>

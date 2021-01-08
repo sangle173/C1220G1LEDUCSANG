@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi kép</title>
+</head>
+<body>
+<script>
+    let soTienGui=parseInt(prompt('Mời bạn nhập số tiền bạn muốn gửi vào'));
+    let soThang=parseInt(prompt('mời bạn nhập số tháng'));
+    let laiSuat=parseInt(prompt('mời bạn nhập lãi suất'));
+    let soTienNhan=soTienGui* ( ( (1+laiSuat/100)) **soThang );
+    alert('Số tiền bạn nhận được:'+soTienNhan);
+</script>
+</body>
+</html>

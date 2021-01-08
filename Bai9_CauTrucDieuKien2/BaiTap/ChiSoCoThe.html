@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chỉ số cơ thể</title>
+</head>
+<body>
+<script>
+    let canNang=prompt('Vui lòng nhập cân nặng kg :');
+    let chieuCao=prompt('Vui long nhập chiều cao cm :');
+    let chiSoBim;
+
+    chiSoBim=parseInt(canNang)/((parseInt(chieuCao)/100)*(parseInt(chieuCao))/100);
+    if (chiSoBim<18.5){
+        alert('underweight');
+    }
+    else if (chiSoBim<=25){
+        alert('Normal');
+    } else if (chiSoBim<=30){
+        alert('Overweight');
+    } else {
+        alert('Obese');
+    }
+</script>
+</body>
+</html>

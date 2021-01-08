@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap tính số ngày trong tháng</title>
+</head>
+<body>
+<form action="">
+    <label for="month">Vui lòng nhập tháng: </label>
+    <input type="number" id="month">
+    <button type="button" onclick="tinhSoNgay()">Tính số ngày</button>
+</form>
+<script>
+    function tinhSoNgay() {
+        let a = parseInt(document.getElementById('month').value);
+        console.log(a);
+        switch (a) {
+            case 1:
+                alert("Tháng 31 ngày!");
+                break;
+            case 2:
+                alert('Tháng có 28,29 ngày!');
+                break;
+             case 3:
+                 alert('Tháng có 31 ngày');
+                 break;
+            case 4:
+                alert('Tháng có 30 ngày');
+                break;
+            case 5:
+                alert('Tháng có 31 ngày');
+                break;
+            case 6:
+                alert('Tháng có 30 ngày');
+                break;
+            case 7:
+                alert('Tháng có 31 ngày');
+                break;
+            case 8:
+                alert('Tháng có 31 ngày');
+                break;
+            case 9:
+                alert('Tháng có 30 ngày');
+                break;
+            case 10:
+                alert('Tháng có 31 ngày');
+                break;
+            case 11:
+                alert('Tháng có 30 ngày');
+                break;
+            case 12:
+                alert('Tháng có 31 ngày');
+                break;
+            default:
+                alert("Không có tháng đó");
+        }
+    }
+</script>
+</body>
+</html>

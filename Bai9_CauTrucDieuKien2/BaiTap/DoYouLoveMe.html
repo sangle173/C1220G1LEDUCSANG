@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+    <style>
+        input{
+            border: 0.1px solid gold;
+            background-color: orangered;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: darkred">Do you love me?</h1>
+    <input type="button" onclick="yesClick()" value="Yes" style="position: absolute; left: 20px">
+    <input type="button" id="ngauNhien" value="No" onmouseover="noHover()" style="position: absolute; left: 120px">
+    <script>
+        function yesClick() {
+            alert('I love you too!');
+
+        }
+        function noHover() {
+            var x=Math.round(Math.random()*window.innerWidth);
+            var y=Math.round(Math.random()*window.innerHeight);
+            document.getElementById('ngauNhien').style.left=x+'px';
+            document.getElementById('ngauNhien').style.top=y+'px';
+        }
+
+    </script>
+
+</body>
+</html>
