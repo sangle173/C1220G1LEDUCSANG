@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2 task 3</title>
+</head>
+<body>
+<script>
+    //Khai báo các biến tương ứng với các thông tin
+    let name;
+    let cmnd;
+    let birthDay;
+    let email;
+    let address;
+    let typeCustomer;
+    let discount;
+    let pax;
+    let renDays;
+    let typeService;
+    let typeRoom;
+    let totalPay;
+    // nhập dữ liệu bằng kiểu prompt
+    name=prompt('Nhập tên của bạn: ');
+    cmnd=prompt('Nhập số cmnd :');
+    birthDay=prompt('Nhập ngày sinh của bạn:');
+    email=prompt('Nhập email:');
+    address=prompt("Nhập địa chỉ:");
+    typeCustomer=prompt('Nhập loại Khách Hàng:');
+    pax=prompt('Nhập số lượng đi kèm:');
+    renDays=parseInt(prompt('Nhập số ngày thuê:'));
+    typeService=prompt('Nhập loại dịch vụ:');
+    typeRoom=prompt('Nhập loại phòng:');
+    //số tiền phải trả(totalPay) bằng giá các loại dịch vụ, nhân với số ngày và trừ cho số tiền giảm giá
+    switch (address) {
+        case 'Đà nẵng':{
+            discount=20;
+            if (renDays<=2){
+                discount=discount+0;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }else if (renDays<=4){
+                discount=discount+10;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            } else if (renDays<=7){
+                discount=discount+20;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }else {
+                discount=discount+30;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }
+            break;
+        }
+        case 'Huế':{
+            discount=10;
+            if (renDays<=2){
+                discount=discount+0;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }else if (renDays<=4){
+                discount=discount+10;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            } else if (renDays<=7){
+                discount=discount+20;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }else {
+                discount=discount+30;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }
+            break;
+        }
+        case 'Quảng nam':{
+            discount=5;
+            if (renDays<=2){
+                discount=discount+0;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }else if (renDays<=4){
+                discount=discount+10;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            } else if (renDays<=7){
+                discount=discount+20;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }else {
+                discount=discount+30;
+                switch (typeCustomer) {
+                    case 'Diamond':{
+                        discount=discount+15;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Platium':{
+                        discount=discount+10;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Gold':{
+                        discount=discount+5;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Silve':{
+                        discount=discount+2;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+                    case 'Member':{
+                        discount=discount+0;
+                        alert('Số tiền được giảm là: '+discount);
+                        break;
+                    }
+
+                }
+            }
+            break;
+        }
+    }
+    switch (typeService) {
+        case 'Villa':{
+            typeService=500;
+            totalPay=typeService*renDays-discount;
+            alert('số tiền bạn cần trả là :'+totalPay);
+            break;
+        }
+        case 'House':{
+            typeService=300;
+            totalPay=typeService*renDays-discount;
+            alert('số tiền bạn cần trả là :'+totalPay);
+            break;
+        }
+        case 'Room':{
+            typeService=100;
+            totalPay=typeService*renDays-discount;
+            alert('số tiền bạn cần trả là :'+totalPay);
+            break;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yêu cầu 2</title>
+</head>
+<body>
+<script>
+    let name='Lê Đức Sang';
+    let cmnd=203424329;
+    let birthDay=11/12/2019;
+    let email='ads@sadas.com';
+    let address='quang nam';
+    let typeCustomer='VIP';
+    let discount=10;
+    let pax=6;
+    let renDays=5;
+    let typeService='Gold';
+    let typeRoom='Room';
+    let totalPay;
+    totalPay=300*renDays*(1-discount/100);
+    while (true) { //Vòng lặp vô hạn
+        let choose = parseInt(prompt('1.Hiển thị toàn bộ thông tin:' + '\n' +
+            '2.Chỉnh sửa lại thông tin:' + '\n' +
+            '3.Hiển thị lại thông tin đã chỉnh sửa:'));
+        //sử dụng switch-case để chọn các trường hơp
+        switch (choose) {
+            case 1: {
+                alert('1.Họ và tên: ' + name + '\n' +
+                    '2.Số CMND: ' + cmnd + '\n' +
+                    '3.Ngày sinh: ' + birthDay + '\n' +
+                    '4.Email: ' + email + '\n' +
+                    '5.Địa chỉ: ' + address + '\n' +
+                    '6.Loại khách hàng: ' + typeCustomer + '\n' +
+                    '7.Giảm giá: ' + discount + '\n' +
+                    '8.Số lượng đi kèm: ' + pax + '\n' +
+                    '9.Số ngày thuê: ' + renDays + '\n' +
+                    '10.Loại dịch vụ: ' + typeService + '\n' +
+                    '11.Loại phòng: ' + typeRoom + '\n' +
+                    '12.Tổng hóa đơn: ' + totalPay + '\n');
+                break;
+            }
+            case 2: {
+                //Cho người dung edit thông tin
+                let chooseEdit = parseInt(prompt('1.Họ và tên: ' + name + '\n' +
+                    '2.Số CMND: ' + cmnd + '\n' +
+                    '3.Ngày sinh: ' + birthDay + '\n' +
+                    '4.Email: ' + email + '\n' +
+                    '5.Địa chỉ: ' + address + '\n' +
+                    '6.Loại khách hàng: ' + typeCustomer + '\n' +
+                    '7.Giảm giá: ' + discount + '\n' +
+                    '8.Số lượng đi kèm: ' + pax + '\n' +
+                    '9.Số ngày thuê: ' + renDays + '\n' +
+                    '10.Loại dịch vụ: ' + typeService + '\n' +
+                    '11.Loại phòng: ' + typeRoom + '\n' +
+                    '12.Tổng hóa đơn: ' + totalPay + '\n'));
+                //Dùng switch -case để giúp người dùng chọn các thông tin cần chỉnh sửa
+                switch (chooseEdit) {
+                    case 1: {
+                        name = prompt('Nhập lại tên: ');
+                        break;
+                    }
+
+                    case 2: {
+                        cmnd = prompt('Nhập lại số Cmnd: ');
+                        break;
+                    }
+                    case 3: {
+                        birthDay = prompt('Nhập lại ngày sinh: ');
+                        break;
+                    }
+                    case 4: {
+                        email = prompt('Nhập lại email: ');
+                        break;
+                    }
+                    case 5: {
+                        address = prompt('Nhập lại Địa chỉ: ');
+                        break;
+                    }
+                    case 6: {
+                        typeCustomer = prompt('Nhập lại Loại khách hàng: ');
+                        break;
+                    }
+                    case 7: {
+                        discount = prompt('Nhập lại Giảm giá: ');
+                        break;
+                    }
+                    case 8: {
+                        pax = prompt('Nhập lại số lượng đi kem: ');
+                        break;
+                    }
+                    case 9: {
+                        renDays = prompt('Nhập lại số ngày thuê: ');
+                        break;
+                    }
+                    case 10: {
+                        typeService = prompt('Nhập lại loại dịch vụ: ');
+                        break;
+                    }
+                    case 11: {
+                        typeRoom = prompt('Nhập lại loại phòng: ');
+                        break;
+                    }
+                    default:{
+                        alert('Bạn nhập không đúng, vui lòng nhập lại nhé: ');
+                    }
+
+                }
+                //In ra lại thông tin sau khi chỉnh sửa
+                alert('1.Họ và tên: ' + name + '\n' +
+                    '2.Số CMND: ' + cmnd + '\n' +
+                    '3.Ngày sinh: ' + birthDay + '\n' +
+                    '4.Email: ' + email + '\n' +
+                    '5.Địa chỉ: ' + address + '\n' +
+                    '6.Loại khách hàng: ' + typeCustomer + '\n' +
+                    '7.Giảm giá: ' + discount + '\n' +
+                    '8.Số lượng đi kèm: ' + pax + '\n' +
+                    '9.Số ngày thuê: ' + renDays + '\n' +
+                    '10.Loại dịch vụ: ' + typeService + '\n' +
+                    '11.Loại phòng: ' + typeRoom + '\n' +
+                    '12.Tổng hóa đơn: ' + totalPay + '\n')
+                break;
+            }
+            default:{
+                alert('Bạn nhập không đúng, vui lòng nhập lại nhé: ')
+            }
+        }
+    }
+</script>
+</body>
+</html>
