@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập 2</title>
+</head>
+<body>
+<button type="button" onclick="baitap1()">Bai tap 1</button>
+<br> <br>
+<button type="button" onclick="baitap2()">Bai tap 2</button>
+<br> <br>
+<button type="button" onclick="baitap3()">Bai tap 3</button>
+<br> <br>
+<button type="button" onclick="baitap4()">Bai tap 4</button>
+<br> <br>
+<button type="button" onclick="baitap5()">Bai tap 5</button>
+<br> <br>
+<button type="button" onclick="baitap6()">Bai tap 6</button>
+<script>
+    function baitap1() {
+        let f0=0;
+        let f1=1;
+        let fi=1;
+        document.write(f0+'<br>'+f1+'<br>'+fi+'<br>');
+        for (i=3;i<50;i++){
+            f0=f1;
+            f1=fi;
+            fi=f1+f0;
+            document.write(fi+'<br>');
+
+        }
+    }
+    function baitap2() {
+        let n=prompt('nhập một số');
+        let giaiThua=1;
+        for (let i=1;i<=n;i++){
+           giaiThua=giaiThua*i;
+        }
+        document.write(giaiThua);
+    }
+    function baitap3() {
+        let i;
+        let j;
+        let z;
+        for (i=1;i<=5;i++){
+            for (j=1;j<=i;j++){
+                document.write('*');//in ra dấu sao
+            }
+            document.write('<br>');
+        }
+        document.write('<br>');//xuống dòng
+        for (i = 5; i >= 1; i--) {
+            for (j = i; j >= 1; j--) {
+                document.write("*"); //in ra dấu sao
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+
+        for (i = 1; i <= 5; i++) {
+            for (z = 5; z >= i; z--) {
+                document.write("&nbsp&nbsp");
+            }
+            for (j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("&nbsp&nbsp");
+            }
+            for (z = 5; z >= i; z--) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+    }
+</script>
+</body>
+</html>
