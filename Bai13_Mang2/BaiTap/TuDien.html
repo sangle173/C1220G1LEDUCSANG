@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="word">Tu can tra</label>
+<input type="text" id="word" value="">
+<button type="button" onclick="tratu()" value="tratu">Search</button>
+<p id="result"></p>
+<script>
+    function tratu() {
+        let str=document.getElementById('word').value;
+        let eng=["green","blue","yellow"];
+        let viet=["xanh","xanh lục","vàng"];
+        for (let i=0;i<eng.length;i++){
+            if (str===eng[i]){
+                document.getElementById('result').innerHTML='Tiếng việt là: '+viet[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>

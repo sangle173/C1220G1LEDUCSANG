@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let numbers=[];
+    let soLonHon=[];
+    for (let i=1;i<11;i++){
+        numbers[i]=parseInt(prompt('Nhập một số nguyên thứ '+i));
+        if (numbers[i]>10){
+            soLonHon.push(numbers[i]);
+        }
+    }
+    document.write('số lượng các số lớn hơn 10 la: '+soLonHon.length);
+</script>
+</body>
+</html>

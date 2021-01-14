@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for (let i=0;i<10;i++){
+        array[i]=prompt('Nhập một số nguyên thứ '+i);
+    }
+    let result;
+    let check=parseInt(prompt('Nhập số Nguyên V:'));
+    let count=0;
+    for(let i=0;i<array.length;i++){
+        if (check==array[i]){
+            result = true;
+            count=i;
+            break;
+        }else {
+            result = false;
+        }
+    }
+    if (result==true){
+        array.splice(count,1);
+        array.push(0);
+        document.write(array);
+    }else {
+        document.write('V not in the array');
+    }
+
+
+</script>
+</body>
+</html>

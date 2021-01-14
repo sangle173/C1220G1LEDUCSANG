@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for (let i=0;i<10;i++){
+        array[i]=prompt('Nhập một số nguyên thứ '+i);
+    }
+    let result;
+    let check=parseInt(prompt('Nhập số Nguyên V:'));
+   for(let i=0;i<array.length;i++){
+       if (check==array[i]){
+        result = true;
+            break;
+       }else {
+           result = false;
+       }
+   }
+    document.write(result);
+</script>
+</body>
+</html>

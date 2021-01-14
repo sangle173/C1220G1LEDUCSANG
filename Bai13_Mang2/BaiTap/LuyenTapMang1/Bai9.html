@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nối mảng</title>
+</head>
+<body>
+<script>
+    let a=[];
+    let b=[];
+
+    for (let i=0;i<10;i++){
+        a[i]=parseInt(prompt('Nhập số thứ '+(i+1)+' của mảng a'));
+    }
+    for (let i=0;i<10;i++){
+        b[i]=parseInt(prompt('Nhập số thứ '+(i+1)+' của mảng b '));
+    }
+    let c=[];
+    c=a.concat(b);
+    alert('Mảng c có các giá trị '+c.join(';'));
+</script>
+</body>
+</html>

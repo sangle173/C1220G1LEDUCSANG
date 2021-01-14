@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Su dung cac ham co san</title>
+</head>
+<body>
+<button id="baitap1" type="button" onclick="baitap1()">Bai 1</button>
+<br> <br>
+<button id="baitap2" type="button" onclick="baitap2()">Bai 2</button>
+<br> <br>
+<button id=baitap3"" type="button" onclick="baitap3()">Bai 3</button>
+<script>
+    function baitap1() {
+        let array=["red","green","white","black"];
+        alert(array.toString());
+        alert(array.join(" "));
+        alert(array.join("+"));
+
+    }
+    function baitap2() {
+        let num=parseInt(prompt('Nhap mot so'));
+        let str=num.toString();
+        let result=[str[0]];
+        for (let i=0;i<str.length;i++){
+            if (str[i]%2===0&&str[i-1]%2===0){
+                result.push("-"+str[i]);
+            }else {
+                result.push(str[i]);
+            }
+        }
+        alert(result.join(""));
+
+    }
+    function baitap3() {
+        let a=prompt('nhap vao mot chuoi');
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result=[];
+        for (let i=0;i<a.length;i++){
+            if (UPPER.indexOf(a[i])!== -1){
+                result.push(a[i].toLowerCase());
+            }else if (LOWER.indexOf(a[i])!==-1){
+                result.push(a[i].toUpperCase());
+            }else {
+                result.push(a[i]);
+            }
+        }
+        alert(result.join(''));
+    }
+</script>
+</body>
+</html>
