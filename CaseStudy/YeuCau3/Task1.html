@@ -18,46 +18,80 @@
     let typeService;
     let typeRoom;
     let totalPay;
-    // name=prompt('Nhập tên của bạn: ');
-    //
-    // birthDay=prompt('Nhập ngày sinh của bạn:');
-    // email=prompt('Nhập email:');
-    // address=prompt("Nhập địa chỉ:");
-    // typeCustomer=prompt('Nhập loại Khách Hàng:');
-    // discount=prompt("Nhập giảm giá:");
-    // pax=prompt('Nhập số lượng đi kèm:');
-    // renDays=prompt('Nhập số ngày thuê:');
-    // typeService=prompt('Nhập loại dịch vụ:');
-    // typeRoom=prompt('Nhập loại phòng:');
-    // totalPay=300*renDays*(1-discount/100);
-    // do {
-    //     cmnd=parseFloat(prompt('Nhập số cmnd :'));
-    //     if (!isNaN(cmnd)==true){
-    //         break;
-    //     } else {
-    //         alert('Nhập lại dưới dạng số');
-    //     }
-    // }while (isNaN(cmnd));
-
+    let check=false;
     do {
-        cmnd=parseFloat(prompt('Nhập số cmnd :'));
-        if (!isNaN(cmnd)==true){
-            break;
+        birthDay=prompt('Nhập ngày sinh');
+        if (birthDay.charAt(2)==="/"&&birthDay.charAt(5)==="/"){
+            let day=birthDay.substring(0,2);
+            let month=birthDay.substring(3,5);
+            let year=birthDay.substring(6,10);
+            if (!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
+                day=parseFloat(day);
+                month=parseFloat(month);
+                year=parseFloat(year);
+                if (Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year)){
+                    if (day<32&&month<13&&year>1950){
+                        check=true;
+                    }
+                }
+            }
+        }
+        if (!check){
+            alert("ngày sinh không đún định dạng");
+        }
+    } while (!check)
+    check=false;
+    do {
+        email=prompt('Nhập email:');
+        let countAt=0;
+        let countDot=0
+        for (let i=0;i<email.length;i++){
+            if (email.charAt(i)==="@"){
+                countAt++;
+                for (let j=i+1;j<email.length;j++){
+                    if (email.charAt(j)==="."){
+                      countDot++;
+                    }
+                }
+            }
+        }
+        if (countAt!=1||countDot<1){
+            alert("email bạn nhập không đúng");
         } else {
-            alert('Nhập lại dưới dạng số');
+            check=true;
         }
-    }while (isNaN(cmnd));
-    function check_soNguyenDuong() {
-        var flag=true;
-        if (Number.isInteger(cmnd)==true&&cmnd>0){
-            flag=true;
-            alert('Là số nguyên dương')
-        }else {
-            flag=false;
-            alert('khống phải số nguyên dương');
+    } while (!check)
+    check=false;
+    do {
+        cmnd=prompt('Nhập cmnd');
+        if (!isNaN(cmnd)){
+            cmnd=Number.parseFloat(cmnd);
         }
-    }
-    check_soNguyenDuong(cmnd);
+        if (!Number.isInteger(cmnd)){
+            alert("cmnd không không đúng định dạng");
+            continue;
+        }
+        if (cmnd<10000000||cmnd>99999999){
+            alert("cmnd không không đúng định dạng");
+            continue;
+        }
+        check=true;
+    } while (!check)
+    check=false;
+    do {
+        renDays=prompt('Nhập số ngày thuê:');
+        if (!isNaN(renDays)){
+            renDays=Number.parseFloat(renDays);
+            if (Number.isInteger(renDays)&&renDays>0){
+                check=true;
+            }
+            }
+            if (!check){
+             alert(" không đúng định dang")
+        }
+
+    }while (!check)
+    typeService=prompt('Nhập loại dịch vụ:');
 
 </script>
 </body>
