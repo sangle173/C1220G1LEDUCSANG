@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo mảng só nguyên bất kì</title>
+</head>
+<body>
+<script>
+    function checkNumberInt(x) {
+        let check=false;
+        do {
+            let numbers=x;
+            if (!isNaN(numbers)) {
+                numbers=Number.parseFloat(numbers);
+                if (!Number.isInteger(numbers)){
+                    // alert(numbers+' không phải số nguyên');
+                    check=false;
+                    break;
+                }else {
+                    check=true;
+                }
+            }else {
+                // alert('Bạn nhập không đúng số nguyên');
+                check=false;
+                break;
+            }
+        } while (!check);
+        return check;
+    }
+    function changOrderNumArr() {
+        let n=parseInt(prompt('Nhập số phần tử trong mảng số nguyên'));
+        let numbers=[];
+        for (let i=0; i<n; i++){
+            numbers[i]=prompt('mời bận nhập số nguyên thứ nhất'+(i+1));
+            if (checkNumberInt(numbers[i])){
+                continue;
+            }else {
+                alert('Bạn nhập không đúng');
+                break;
+            }
+        }
+        alert((numbers.reverse()).join(' '));
+    }
+    changOrderNumArr()
+</script>
+</body>
+</html>

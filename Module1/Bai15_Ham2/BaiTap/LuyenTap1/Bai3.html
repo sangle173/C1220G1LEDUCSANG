@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<input type="number" id="para1" > tham số 1
+<input type="number" id="para2"> tham số 2
+<button type="button" onclick="myFunction()">try it</button>
+
+<script>
+    let para1=document.getElementById('para1');
+    let para2=document.getElementById('para2');
+    function myFunction() {
+        let sum=parseInt(para1.value)+parseInt(para2.value);
+        if (parseInt(para1.value)>parseInt(para2.value)){
+            alert('Số thứ nhất lớn hơn số thứ 2');
+        }else {
+           alert("tổng 2 số là : "+sum);
+        }
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<button type="button" onclick="cirlePremeter()">cirle premeter </button>
+<button type="button" onclick="cirleArea()">cirle area</button>
+<script>
+    let r=parseInt(prompt('Nhập bán kính hình tròn'))
+    function cirlePremeter() {
+        alert('Chu vi hình tròn có bán kính '+r+' là :'+(2*r*3.14));
+    }
+    function cirleArea() {
+        alert('Diện tích hình tròn có bán kính là'+r+' là : '+(3.14*r**2));
+    }
+
+</script>
+</body>
+</html>

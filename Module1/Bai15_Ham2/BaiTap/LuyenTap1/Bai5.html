@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+    let arrayStars=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arrayConstellations=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function myFunction() {
+        let inputStar=prompt('Nhập chòm sao bạn muốn đoán :');
+        let check=true;
+        for (let i=0;i<arrayStars.length;i++){
+            if (arrayStars[i]==inputStar){
+                alert('Chòm sao tương xứng là : '+arrayConstellations[i]);
+                check=false;
+            }
+        }
+        if (check){
+            alert('Không có ngôi sao bạn muốn nhập');
+        }
+
+
+    }
+</script>
+</body>
+</html>

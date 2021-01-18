@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số nguyên</title>
+</head>
+<body>
+<script>
+    function checkNumberInt(x) {
+        let check=false;
+        do {
+            let numbers=x;
+            if (!isNaN(numbers)) {
+                numbers=Number.parseFloat(numbers);
+                if (!Number.isInteger(numbers)){
+                    // alert(numbers+' không phải số nguyên');
+                    check=false;
+                    break;
+                }else {
+                    check=true;
+                }
+            }else {
+                // alert('Bạn nhập không đúng số nguyên');
+                check=false;
+                break;
+            }
+        } while (!check);
+        return check;
+    }
+    function changeOrder() {
+        let a=prompt('Nhập số thứ 1');
+        let b=prompt('Nhập số thứ 2');
+        if (checkNumberInt(a)&&checkNumberInt(b)){
+            alert('Thứ tự được thay đổi là '+b+' với '+a);
+        }else {
+            alert('Vui lòng nhập lại');
+        }
+    }
+    changeOrder();
+
+</script>
+</body>
+</html>

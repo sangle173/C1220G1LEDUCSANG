@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<button type="button" onclick="checkNaN()">Try it</button>
+<script>
+    let num;
+    function checkNaN() {
+           num=prompt('Nhập vào một số');
+           if (!isNaN(num)){
+               alert(num+' là một số');
+           }else {
+               alert(num+' không phải là một số');
+           }
+    }
+</script>
+</body>
+</html>

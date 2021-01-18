@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkNumberInt() {
+            let check=false;
+            do {
+                let numbers=prompt('Mời bận nhập một số');
+                if (!isNaN(numbers)) {
+                    numbers=Number.parseFloat(numbers);
+                    if (!Number.isInteger(numbers)){
+                        // alert(numbers+' không phải số nguyên');
+                        check=false;
+                        break;
+                    }else if (numbers>0){
+                        // alert(numbers+' là số nguyên dương');
+                        check=true;
+                    } else {
+                        // alert('Bận nhập không đúng');
+                        check=false;
+                    }
+                }else {
+                    // alert('Bạn nhập không đúng số nguyên');
+                    check=false;
+                    break;
+                }
+            } while (!check);
+            return check;
+        }
+        alert(checkNumberInt());
+    </script>
+</body>
+</html>

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55909b8d-9ab6-4ca0-a6ec-3901eb123f3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bai10_CauTrucVongLap/ThucHanh/Bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YeuCau2/YeuCau2_Task3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bai11_CauTrucVongLap2/BaiTap/LuyenTap1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai11_CauTrucVongLap2/BaiTap/LuyenTap1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bai11_CauTrucVongLap2/BaiTap/LuyenTap2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai11_CauTrucVongLap2/BaiTap/LuyenTap2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bai4_Git-Html/BaiTap/BaiTap_Git/BaiTap_TaoFileHtmlLenGitHub/BaiTap_Html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai4_Git-Html/BaiTap/BaiTap_Git/BaiTap_TaoFileHtmlLenGitHub/BaiTap_Html/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bai4_Git-Html/BaiTap/TaoDanhSach.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bai6_TongQuanJavaScript/ThucHanh/BaiTap_HienThiDauRa/BaiTap1_HienThiKetQuaBangAlert.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai6_TongQuanJavaScript/ThucHanh/BaiTap_HienThiDauRa/BaiTap1_HienThiKetQuaBangAlert.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bai7_Bien_KieuDuLieu_ToanTu/BaiTap/BaiTapUngDungMayTinh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai7_Bien_KieuDuLieu_ToanTu/BaiTap/BaiTapUngDungMayTinh/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bai11_CauTrucVongLap2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
@@ -59,7 +56,11 @@
       <workItem from="1610001169013" duration="10177000" />
       <workItem from="1610095282169" duration="3285000" />
       <workItem from="1610328418566" duration="18000" />
-      <workItem from="1610348558559" duration="9648000" />
+      <workItem from="1610348558559" duration="9996000" />
+      <workItem from="1610413723053" duration="92000" />
+      <workItem from="1610525286063" duration="1156000" />
+      <workItem from="1610526821993" duration="3082000" />
+      <workItem from="1610594980594" duration="244000" />
     </task>
     <servers />
   </component>
@@ -67,10 +68,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1610328434628">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1610525811231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1610328434628" />
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1610525811231" />
     <state x="585" y="0" width="914" height="680" key="SettingsEditor" timestamp="1610348749039">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

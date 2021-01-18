@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<button type="button" onclick="factorial()">factorial</button>
+<script>
+    function factorial() {
+        let n=parseInt(prompt('Nhập số n'));
+        let fac=1;
+        for (let i=1;i<=n;i++){
+            fac=fac*i;
+        }
+        document.write('Gia thừa của '+n+' là : '+fac);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+</head>
+<body>
+<script>
+    let name;
+    let cmnd;
+    let birthDay;
+    let email;
+    let address;
+    let typeCustomer;
+    let discount;
+    let pax;
+    let renDays;
+    let typeService;
+    let typeRoom;
+    let totalPay;
+    // name=prompt('Nhập tên của bạn: ');
+    //
+    // birthDay=prompt('Nhập ngày sinh của bạn:');
+    // email=prompt('Nhập email:');
+    // address=prompt("Nhập địa chỉ:");
+    // typeCustomer=prompt('Nhập loại Khách Hàng:');
+    // discount=prompt("Nhập giảm giá:");
+    // pax=prompt('Nhập số lượng đi kèm:');
+    // renDays=prompt('Nhập số ngày thuê:');
+    // typeService=prompt('Nhập loại dịch vụ:');
+    // typeRoom=prompt('Nhập loại phòng:');
+    // totalPay=300*renDays*(1-discount/100);
+    // do {
+    //     cmnd=parseFloat(prompt('Nhập số cmnd :'));
+    //     if (!isNaN(cmnd)==true){
+    //         break;
+    //     } else {
+    //         alert('Nhập lại dưới dạng số');
+    //     }
+    // }while (isNaN(cmnd));
+
+    do {
+        cmnd=parseFloat(prompt('Nhập số cmnd :'));
+        if (!isNaN(cmnd)==true){
+            break;
+        } else {
+            alert('Nhập lại dưới dạng số');
+        }
+    }while (isNaN(cmnd));
+    function check_soNguyenDuong() {
+        var flag=true;
+        if (Number.isInteger(cmnd)==true&&cmnd>0){
+            flag=true;
+            alert('Là số nguyên dương')
+        }else {
+            flag=false;
+            alert('khống phải số nguyên dương');
+        }
+    }
+    check_soNguyenDuong(cmnd);
+
+</script>
+</body>
+</html>
