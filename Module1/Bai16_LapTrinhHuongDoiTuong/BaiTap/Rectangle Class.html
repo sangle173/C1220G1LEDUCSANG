@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let Rectangle =function (width, length) {
+    //         this.width =width;
+    //         this.length=length;
+    //         this.getPremeter =function () {
+    //             return 2*(this.width+this.length);
+    //         }
+    //         this.getArea =function () {
+    //             return this.width*this.length;
+    //         }
+    //         this.setWidth =function (width) {
+    //             this.width =width;
+    //         }
+    //     this.setLength =function (lenght) {
+    //         this.length =lenght;
+    //     }
+    // }
+    // let rectange=new Rectangle(2, 3);
+    // let width=rectange.width;
+    // let length=rectange.length;
+    // let premeter=rectange.getPremeter();
+    // let area=rectange.getArea();
+    // alert("chu vi hình chữ nhật "+premeter+" và diện tích là : "+area);
+    // width=rectange.setWidth(10);
+    // length=rectange.setLength(20);
+    // premeter=rectange.getPremeter();
+    // area=rectange.getArea();
+    // alert("Chu vi mới là "+premeter+" và diện tích mới là "+area);
+    class Rectangle {
+        constructor(width,length) {
+            this.width= width;
+            this.length= length;
+        }
+        getWidth(){
+            return this.width;
+        }
+        getLength(){
+            return this.width;
+        }
+        getPremeter(){
+            return 2*(this.width+this.length);
+        }
+        getArea(){
+            return this.width*this.length;
+        }
+        setWidth(width){
+            this.width =width;
+        }
+        setLength(length){
+            this.length =length;
+        }
+    }
+    let rectangle=new Rectangle(12,31);
+    let length=rectangle.getLength();
+    let width=rectangle.getWidth();
+    let area=rectangle.getArea();
+    let premeter=rectangle.getPremeter();
+    alert('Diện tích hình chữ nhật là '+area+" chu vi hình chữ nhật là "+premeter);
+    length=rectangle.setLength(3443);
+    width=rectangle.getWidth(121);
+    area=rectangle.getArea();
+    premeter=rectangle.getPremeter();
+    alert('Diện tích hình chữ nhật mới là '+area+" chu vi hình chữ nhật mới là "+premeter);
+
+</script>
+</body>
+</html>

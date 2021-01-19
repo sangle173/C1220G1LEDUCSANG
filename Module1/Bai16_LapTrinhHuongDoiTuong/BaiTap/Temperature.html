@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let Temperature = function (C) {
+    //     this.C=C;
+    //     this.getF= function () {
+    //         return this.C*1.8+32;
+    //     }
+    //     this.getK= function () {
+    //         return this.C+273.15;
+    //     }
+    // }
+    class Temperature {
+        constructor(C){
+            this.C=C;
+        }
+        getF(){
+            return this.C*1.8+32;
+        }
+        getK(){
+            return this.C+273.15;
+        }
+    }
+    let temp=new Temperature(30);
+    alert("nhiệt độ F là "+temp.getF()+" và nhiệt độ K là "+temp.getK());
+
+    // let c=temp.C;
+    // let f=temp.getF();
+    // let k=temp.getK();
+    // alert("nhiệt độ F là :"+f+' và nhiệt độ K là  '+k);
+</script>
+</body>
+</html>
