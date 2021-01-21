@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="case.css">
+</head>
+<body>
+<div class="booking">
+    <form action="" style="width: 400px">
+        <legend>Booking Table</legend>
+        <fieldset style="border: none">
+            <table>
+                <tr>
+                    <td><label for="fname">Full Name</label></td>
+                    <td><input type="text" id="fname" placeholder="full name"></td>
+                </tr>
+                <tr>
+                    <td><label for="cmndNum">Cmnd Number</label></td>
+                    <td><input type="number" id="cmndNum" placeholder="CMND number"></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Birth Day</label></td>
+                    <td><input type="text" id="birthday" placeholder="MM/DD/YYYY"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" id="email" placeholder="abc@abc.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="typeCustomer">Type Customer</label></td>
+                    <!--        //loại customer Diamond, Platinum, Gold, Silver, Member-->
+                    <td>
+                        <select id="typeCustomer">
+                            <option value="">Choose type Customer</option>
+                            <option value="diamond">Diamond</option>
+                            <option value="platinum">Platinum</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="member">Member</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="discount">Discount</label></td>
+                    <td><input type="number" id="discount" placeholder="discount %"></td>
+                </tr>
+                <tr>
+                    <td><label for="quantifiers">Quantifiers</label></td>
+                    <td><input type="number" id="quantifiers" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td><label for="rentDays">Rent Days</label></td>
+                    <td><input type="number" id="rentDays" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td><label for="typeService">Type Service</label></td>
+                    <td>
+                        <select id="typeService">
+                            <option value="">Choose type Service</option>
+                            <option value="villa">Villa</option>
+                            <option value="house">House</option>
+                            <option value="room">Room</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="typeRoom">Type Room</label></td>
+                    <td>
+                        <select id="typeRoom">
+                            <option value="">Choose type Room</option>
+                            <option value="vip">Vip</option>
+                            <option value="business">Business</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            <tr>
+                <td><button type="button" onclick="xacnhan()">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </fieldset>
+    </form>
+</div>
+<div class="info">
+    <table>
+        <tr>
+            <th id="caption" colspan="2"></th>
+        </tr>
+        <tr>
+            <td id="fname_info1"></td>
+            <td id="fname_info"></td>
+            <td id="edit_name"></td>
+        </tr>
+        <tr>
+            <td id="cmnd_info1"></td>
+            <td id="cmnd_info"></td>
+            <td id="edit_cmnd"></td>
+        </tr>
+        <tr>
+            <td id="birthday_info1"></td>
+            <td id="birthday_info"></td>
+            <td id="edit_birthday"></td>
+        </tr>
+        <tr>
+            <td id="email_info1"></td>
+            <td id="email_info"></td>
+            <td id="edit_email"></td>
+        </tr>
+        <tr>
+            <td id="address_info1"></td>
+            <td id="address_info"></td>
+            <td id="edit_address"></td>
+        </tr>
+        <tr>
+            <td id="typeCustomer_info1"></td>
+            <td id="typeCustomer_info"></td>
+            <td id="edit_typeCustomer"></td>
+        </tr>
+        <tr>
+            <td id="discount_info1"></td>
+            <td id="discount_info"></td>
+            <td id="edit_discount"></td>
+        </tr>
+        <tr>
+            <td id="quantifiers_info1"></td>
+            <td id="quantifiers_info"></td>
+            <td id="edit_quantifiers"></td>
+        </tr>
+        <tr>
+            <td id="renDays_info1"></td>
+            <td id="rentDays_info"></td>
+            <td id="edit_rentDays"></td>
+        </tr>
+        <tr>
+            <td id="typeService_info1"></td>
+            <td id="typeService_info"></td>
+            <td id="edit_typeService"></td>
+        </tr>
+        <tr>
+            <td id="typeRoom_info1"></td>
+            <td id="typeRoom_info"></td>
+            <td id="edit_typeRoom"></td>
+        </tr>
+        <tr>
+            <td id=""></td>
+            <td id="edit_info"></td>
+        </tr>
+        <tr>
+            <td id=""></td>
+            <td id="confirm_info"></td>
+        </tr>
+        <tr>
+            <td id=""></td>
+            <td id="edit_info"></td>
+        </tr>
+
+
+    </table>
+    <span id="price" style="font-size: 30px; color: red"></span>
+</div>
+<script src="case.js">
+</script>
+</body>
+</html>
