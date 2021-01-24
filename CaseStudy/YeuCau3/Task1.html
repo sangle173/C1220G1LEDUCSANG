@@ -14,7 +14,7 @@
     let typeCustomer;
     let discount;
     let pax;
-    let renDays;
+    let rentDays;
     let typeService;
     let typeRoom;
     let totalPay;
@@ -79,10 +79,10 @@
     } while (!check)
     check=false;
     do {
-        renDays=prompt('Nhập số ngày thuê:');
-        if (!isNaN(renDays)){
-            renDays=Number.parseFloat(renDays);
-            if (Number.isInteger(renDays)&&renDays>0){
+        rentDays=prompt('Nhập số ngày thuê:');
+        if (!isNaN(rentDays)){
+            renDays=Number.parseFloat(rentDays);
+            if (Number.isInteger(renDays)&&rentDays>0){
                 check=true;
             }
             }

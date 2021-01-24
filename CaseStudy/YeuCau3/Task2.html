@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //chuẩn hóa dữ liệu tên bằng vòng lặp for
+        let tempName='';
+        let name=prompt('input name');
+        name=name.trim().toLowerCase();//cắt khoảng trang 2 đầu và cho thành chữ in thường 
+        for(let i=0;i<name.length;i++){
+           if(name.charAt(i)===' '&&name.charAt(i+1)===' '){
+                continue;
+           }
+           if(i===0||name.charAt(i-1)===' '){// kiểm tra kí tự thứ nhất và thứ i-1 thì in hoa 
+               tempName+=name.charAt(i).toUpperCase();
+               continue;
+           }
+           tempName+=name.charAt(i);
+
+        }
+        name=tempName;
+        alert(name);
+
+
+
+        // chuẩn hóa dữ liệu địa chỉ bằng for
+        let tempAddress='';
+        let address=prompt('input address');
+        address=address.trim().toLowerCase();
+        for(let i=0;i<address.length;i++){
+            if(address.charAt(i)===' '&&address.charAt(i+1)===' '){
+                continue;
+           }
+           if(i===0||address.charAt(i-1)===' '){// kiểm tra kí tự thứ nhất và thứ i-1 thì in hoa 
+               tempAddress+=address.charAt(i).toUpperCase();
+               continue;
+           }
+           tempAddress+=address.charAt(i);
+        }
+        address=tempAddress;
+        alert(address);
+
+        //chuẩn hóa dữ liệu loại khách hàng
+        let typeCustomer=prompt('input type Customer');
+        let tempTypeCustomer='';
+        typeCustomer=typeCustomer.trim().toLowerCase();
+        for(let i=0;i<typeCustomer.length;i++){
+            if(typeCustomer.charAt(i)===' '&&typeCustomer.charAt(i)===' '){
+                continue;
+            }
+            if(i=== 0||typeCustomer.charAt(i-1)===' '){
+                tempTypeCustomer+=typeCustomer.charAt(i).toUpperCase();
+            }
+            tempTypeCustomer+=typeCustomer.charAt(i);
+        }
+        typeCustomer=tempTypeCustomer;
+        alert(typeCustomer);
+    </script>
+</body>
+</html>
