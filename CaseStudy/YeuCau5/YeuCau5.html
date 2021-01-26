@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name;
+    let cmnd;
+    let birthDay;
+    let email;
+    let address;
+    let typeCustomer;
+    let discount;
+    let pax;
+    let rentDays;
+    let typeService;
+    let typeRoom;
+    let totalPay;
+    let check;
+    let newCustomers = [];
+    displayMainMenu()
+
+    function displayMainMenu() {
+        do {
+            check = false;
+            let chooseMenu = parseInt(prompt('Choose from list: ' + '\n' +
+                '1.Add New Customer \n' +
+                '2.Display Information Customer \n' +
+                '3.Edit Information Customer \n' +
+                '4.Delete Customer \n' +
+                '5.Exit'));
+            switch (chooseMenu) {
+                case 1: {
+                    addNewCustomer();
+                    break;
+                }
+                case 2: {
+                    displayInfo();
+                    break;
+                }
+                case 3: {
+                    editInfo();
+                    break;
+                }
+                case 4: {
+                    deleteCustomer();
+                    break;
+                }
+                case 5: {
+                    check = confirm('Do you want to exit')
+                }
+            }
+        } while (check === false)
+    }
+
+    function addNewCustomer() {
+        let chooseNewCustomers = parseInt(prompt('choose number of customer'))
+        let indexOld = newCustomers.length;
+        for (let i = 0; i < chooseNewCustomers; i++) {
+            newCustomers[indexOld] = new Array(11);
+            newCustomers[indexOld][0] = prompt('enter name' + (i + 1));
+            newCustomers[indexOld][1] = prompt('enter cmnd' + (i + 1));
+            newCustomers[indexOld][2] = prompt('enter birthDay' + (i + 1));
+            newCustomers[indexOld][3] = prompt('enter email' + (i + 1));
+            newCustomers[indexOld][4] = prompt('enter address' + (i + 1));
+            newCustomers[indexOld][5] = prompt('enter typeCustomer' + (i + 1));
+            newCustomers[indexOld][6] = prompt('enter discount' + (i + 1));
+            newCustomers[indexOld][7] = prompt('enter pax' + (i + 1));
+            newCustomers[indexOld][8] = prompt('enter rentDays' + (i + 1));
+            newCustomers[indexOld][9] = prompt('enter typeService' + (i + 1));
+            newCustomers[indexOld][10] = prompt('enter typeRoom' + (i + 1));
+            indexOld++;
+        }
+    }
+
+    function displayInfo() {
+        let chooseDisplay = parseInt(prompt('Choose from list: ' + '\n' +
+            '1.Display Customer \n' +
+            '2.Back'));
+        let listNewCustomer = '';
+        switch (chooseDisplay) {
+            case 1: {
+                for (let i = 0; i < newCustomers.length; i++) {
+                    listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' Cmnd ' + newCustomers[i][1] + '\n';
+                }
+                let chooseDisplay1 = parseInt(prompt(listNewCustomer));
+                switch (chooseDisplay1) {
+                    case 1: {
+                        alert(newCustomers[0].join(' '));
+                        break;
+                    }
+                    case 2: {
+                        alert(newCustomers[1].join(' '));
+                        break;
+                    }
+                }
+                break;
+            }
+            case 2: {
+                displayMainMenu();
+                break;
+            }
+        }
+
+    }
+
+    function editInfo() {
+        let chooseEdit = parseInt(prompt('Please choose the number of the row you want to change' + '\n' + '1.Họ và tên: ' + name + '\n' +
+            '2.Số CMND: ' + cmnd + '\n' +
+            '3.Ngày sinh: ' + birthDay + '\n' +
+            '4.Email: ' + email + '\n' +
+            '5.Địa chỉ: ' + address + '\n' +
+            '6.Loại khách hàng: ' + typeCustomer + '\n' +
+            '7.Giảm giá: ' + discount + '\n' +
+            '8.Số lượng đi kèm: ' + pax + '\n' +
+            '9.Số ngày thuê: ' + rentDays + '\n' +
+            '10.Loại dịch vụ: ' + typeService + '\n' +
+            '11.Loại phòng: ' + typeRoom + '\n'));
+        //Dùng switch -case để giúp người dùng chọn các thông tin cần chỉnh sửa
+        switch (chooseEdit) {
+            case 1: {
+                name = prompt('Nhập lại tên: ');
+                break;
+            }
+
+            case 2: {
+                cmnd = prompt('Nhập lại số Cmnd: ');
+                break;
+            }
+            case 3: {
+                birthDay = prompt('Nhập lại ngày sinh: ');
+                break;
+            }
+            case 4: {
+                email = prompt('Nhập lại email: ');
+                break;
+            }
+            case 5: {
+                address = prompt('Nhập lại Địa chỉ: ');
+                break;
+            }
+            case 6: {
+                typeCustomer = prompt('Nhập lại Loại khách hàng: ');
+                break;
+            }
+            case 7: {
+                discount = prompt('Nhập lại Giảm giá: ');
+                break;
+            }
+            case 8: {
+                pax = prompt('Nhập lại số lượng đi kem: ');
+                break;
+            }
+            case 9: {
+                renDays = prompt('Nhập lại số ngày thuê: ');
+                break;
+            }
+            case 10: {
+                typeService = prompt('Nhập lại loại dịch vụ: ');
+                break;
+            }
+            case 11: {
+                typeRoom = prompt('Nhập lại loại phòng: ');
+                break;
+            }
+            default: {
+                alert('Bạn nhập không đúng, vui lòng nhập lại nhé: ');
+            }
+
+        }
+        //In ra lại thông tin sau khi chỉnh sửa
+        alert('1.Họ và tên: ' + name + '\n' +
+            '2.Số CMND: ' + cmnd + '\n' +
+            '3.Ngày sinh: ' + birthDay + '\n' +
+            '4.Email: ' + email + '\n' +
+            '5.Địa chỉ: ' + address + '\n' +
+            '6.Loại khách hàng: ' + typeCustomer + '\n' +
+            '7.Giảm giá: ' + discount + '\n' +
+            '8.Số lượng đi kèm: ' + pax + '\n' +
+            '9.Số ngày thuê: ' + rentDays + '\n' +
+            '10.Loại dịch vụ: ' + typeService + '\n' +
+            '11.Loại phòng: ' + typeRoom + '\n' +
+            '12.Tổng hóa đơn: ' + totalPay + '\n');
+    }
+
+    function deleteCustomer() {
+        let listNewCustomer = '';
+        for (let i = 0; i < newCustomers.length; i++) {
+            listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' Cmnd ' + newCustomers[i][1] + '\n';
+        }
+        let chooseDelete = parseInt(prompt("Choose Customer you want to delete \n" + listNewCustomer));
+        if (chooseDelete > 0 && chooseDelete <= newCustomers.length) {
+            newCustomers.splice((chooseDelete - 1), 1);
+        }
+        listNewCustomer = '';
+        if (newCustomers.length !== 0) {
+            for (let i = 0; i < newCustomers.length; i++) {
+                listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' Cmnd ' + newCustomers[i][1] + '\n';
+            }
+        } else {
+            listNewCustomer = "Empty List";
+        }
+        alert(listNewCustomer);
+
+    }
+</script>
+</body>
+</html>
