@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+<script>
+    class Customer {
+        constructor(name, idCard, birthDay, email, address, typeCustomer, discount, pax, rentDays, typeService, typeRoom) {
+            this.name = name;
+            this.idCard = idCard;
+            this.birthDay =birthDay;
+            this.email = email;
+            this.address = address;
+            this.typeCustomer = typeCustomer;
+            this.discount = discount;
+            this.pax = pax;
+            this.rentDays = rentDays;
+            this.typeService = typeService
+            this.typeRoom= typeRoom;
+        }
+        getName(){
+            return this.name;
+        }
+        getIdCard(){
+            return this.idCard;
+        }
+        getBirthDay(){
+            return this.birthDay;
+        }
+        getEmail(){
+            return this.email;
+        }
+        getAddress(){
+            return this.address;
+        }
+        getTypeCustomer(){
+            return this.typeCustomer;
+        }
+        getDiscount(){
+            return this.discount;
+        }
+        getPax(){
+            return this.pax;
+        }
+        getRentDays(){
+            return this.rentDays;
+        }
+        getTypeService(){
+            return this.typeService;
+        }
+        getTypeRoom(){
+            return this.typeRoom;
+        }
+        setName(name){
+            this.name = name;
+        }
+        setIdCard(idCard){
+            this.idCard = idCard;
+        }
+        setBirthDay(birthDay){
+            this.birthDay = birthDay;
+        }
+        setEmail(email){
+            this.email = email;
+        }
+        setAddress(address){
+            this.address = address;
+        }
+        setTypeCustomer(typeCustomer){
+            this.typeCustomer = typeCustomer;
+        }
+        setDiscount9(discount){
+            this.discount= discount;
+        }
+        setPax(pax){
+            this.pax = pax;
+        }
+        setRentDays(rentDays){
+            this.rentDays = rentDays;
+        }
+        setTypeService(typeService){
+            this.typeService = typeService;
+        }
+        setTypeRoom(typeRoom){
+            this.typeRoom = typeRoom;
+        }
+    }
+    class Employees {
+        constructor(name, birthday, idCard, phoneNumber, email, level, position) {
+            this.name=name;
+            this.birthday=birthday;
+            this.phoneNumber=phoneNumber;
+            this.email=email;
+            this.level=level;
+            this.position=position;
+        }
+        setName(name){
+            this.name=name;
+        }
+        setBirthday(birthday){
+            this.birthday=birthday;
+        }
+        setIdCard(idCard){
+            this.idCard=idCard;
+        }
+        setPhoneNumber(phoneNumber){
+            this.phoneNumber=phoneNumber;
+        }
+        setEmail(email){
+            this.email=email;
+        }
+        setLevel(level){
+            this.level=level;
+        }
+        setPositon(position){
+            this.position=position;
+        }
+        getBirthday(){
+            return this.birthday;
+        }
+        getIdCard(){
+            return this.idCard;
+        }
+        getPhoneNumber(){
+            return this.phoneNumber;
+        }
+        getEmail(){
+            return this.email;
+        }
+        getLevel(){
+            return this.level;
+        }
+        getPosition(){
+            return this.position;
+        }
+    }
+    let employee= new Employees('Sang',123312, '12/12/1990',12121212,12,'leduc@gmai.com','Trung cấp','Manager');
+
+    let check1;
+    let check;
+    let newCustomers = []; // Khai báo mảng rổng;
+
+
+    displayMain();
+    function displayMain() {
+        do {
+            check = false;
+            let chooseMainMenu = parseInt(prompt('Choose from list: ' + '\n' +
+                '1.Customer \n' +
+                '2.Employee \n' +
+                '3.Exit'));
+            switch (chooseMainMenu) {
+                case 1: {
+                    displayCustomerMenu();
+                    break
+                }
+                case 2: {
+                    displayEmpoyeeMenu();
+                    break;
+                }
+                case 3: {
+                    check = confirm('Do you want do exit');
+                }
+                default: {
+                    alert('Please try again');
+                }
+            }
+        } while (!check)
+    }
+    function displayEmpoyeeMenu() {
+        let chooseEmployeeMenu = parseInt(prompt('Choose from list: ' + '\n' +
+            '1.Add new Employees \n' +
+            '2.Display information Employees \n' +
+            '3.Salary of Employees \n' +
+            '4.Back \n'+
+            '5.Exit'));
+        switch (chooseEmployeeMenu) {
+            case 1: {
+               addNewEmployees();
+                break
+            }
+            case 2: {
+                displayEmployees();
+                break;
+            }
+            case 3:{
+                salaryEmployees();
+            }
+            case 4: {
+               displayMain()
+            }
+            case 5:{
+                check=confirm('Do you want to exit')
+            }
+            default: {
+                alert('Please try again');
+            }
+        }
+    }
+    function addNewEmployees() {
+
+    }
+    function displayEmployees() {
+
+    }
+    function salaryEmployees() {
+
+    }
+    // Hàm Main menu ;
+
+    function displayCustomerMenu() {
+        do {
+            check = false;
+            // Hiển thị bảng menu cho người dùng chọn các hàm
+            let chooseMenu = parseInt(prompt('Choose from list: ' + '\n' +
+                '1.Add New Customer \n' +
+                '2.Display Information Customer \n' +
+                '3.Edit Information Customer \n' +
+                '4.Delete Customer \n' +
+                '5.Back \n'+
+                '6.Exit'));
+            //Dùng switch tương ứng với các lựa chon sẽ chạy các hàm
+            switch (chooseMenu) {
+                case 1: {
+                    addNewCustomer();
+                    break;
+                }
+                case 2: {
+                    displayInfo();
+                    break;
+                }
+                case 3: {
+                    editInfo();
+                    break;
+                }
+                case 4: {
+                    deleteCustomer();
+                    break;
+                }
+                case 5:{
+                    displayMain()
+                }
+                case 6: {
+                    check = confirm('Do you want to exit')
+                }
+
+                default:{
+                    alert('Failed')
+                }
+            }
+        } while (check === false)
+    }
+
+    // Thêm các thông tin khách hàng;
+
+    function addNewCustomer() {
+        let chooseNewCustomers = parseInt(prompt('choose number of customer'));
+        let indexOld = newCustomers.length;
+        for (let i = 0; i < chooseNewCustomers; i++) {  // tạo mảng 2 chiều với chiều dài mảng bằng với số khách hàng người dùng muốn thêm
+            newCustomers[indexOld] = new Array(12); // Mảng con có 11 phần tử
+            newCustomers[indexOld][0] = prompt('Enter name: ' + (i + 1));
+            newCustomers[indexOld][1] = prompt('Enter idCard: ' + (i + 1));
+            check1=false;
+            do {
+                newCustomers[indexOld][1] = prompt('Enter idCard: ' + (i + 1));
+                idCard=newCustomers[indexOld][1];
+                let regIdCard = /[0-9]{8}/;
+                check1=regIdCard.test(idCard);
+                if (!check1){
+                    alert("IdCard không đún định dạng");
+                } else {
+                    check1=true;
+                }
+            } while (!check1)
+            check1=false;
+            do {
+                newCustomers[indexOld][2] = prompt('Enter birthDay: ' + (i + 1));
+                birthDay=newCustomers[indexOld][2];
+                let regDate=/^((0[1-9])|([1-2][0-9])|(3[0-1]))\/(([0][1-9])|1[0-2])\/(19[0-9]{2}|20[0-1][0-9]|2020)$/;
+                check1=regDate.test(birthDay);
+                if (!check1){
+                    alert("ngày sinh không đún định dạng");
+                } else {
+                    check1=true;
+                }
+            } while (!check1)
+
+            check1=false;
+            do {
+                newCustomers[indexOld][3] = prompt('Enter email: ' + (i + 1));
+                email=newCustomers[indexOld][3];
+                let regEmail=/^\w{3,}@[a-zA-Z]{3,5}\.[a-zA-Z]{2,3}$/;
+                check1=regEmail.test(email);
+                if (!check1){
+                    alert("email bạn nhập không đúng");
+                } else {
+                    check1=true;
+                }
+            } while (!check1)
+            check=false;
+            newCustomers[indexOld][4] = prompt('Enter address: ' + (i + 1));
+            newCustomers[indexOld][5] = prompt('Enter typeCustomer: ' + (i + 1));
+            check1=false;
+            do {
+                newCustomers[indexOld][6] = prompt('Enter discount: ' + (i + 1));
+                discount=newCustomers[indexOld][6];
+                let regNumber = /[0-9]/;
+                check1=regNumber.test(discount)
+                if (!check1){
+                    alert(" không đúng định dang")
+                }else {
+                    check1=true;
+                }
+            }while (!check1)
+
+
+            check1=false;
+            do {
+                newCustomers[indexOld][7] = prompt('Enter pax: ' + (i + 1));
+                pax=newCustomers[indexOld][7];
+                let regNumber = /[0-9]/;
+                check1=regNumber.test(pax)
+                if (!check1){
+                    alert(" không đúng định dang")
+                }else {
+                    check1=true;
+                }
+            }while (!check1)
+
+            check1=false;
+            do {
+                newCustomers[indexOld][8] = prompt('Enter rentDays: ' + (i + 1));
+                rentDays=newCustomers[indexOld][8];
+                let regNumber = /[0-9]/;
+                check1=regNumber.test(rentDays)
+                if (!check1){
+                    alert(" không đúng định dang")
+                }else {
+                    check1=true;
+                }
+            }while (!check1)
+            newCustomers[indexOld][9] = prompt('Enter typeService: ' + (i + 1));
+            newCustomers[indexOld][10] = prompt('Enter typeRoom: ' + (i + 1));
+            indexOld++;
+        }
+    }
+    // Hàm hiển thị thông tin khách hàng đã được thêm;
+    function displayInfo() {
+        let chooseDisplay = parseInt(prompt('Choose from list: ' + '\n' +
+            '1.Display Customer \n' +
+            '2.Back'));
+        let listNewCustomer = '';
+        switch (chooseDisplay) {
+            case 1: {
+                for (let i = 0; i < newCustomers.length; i++) {
+                    listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' IdCard :' + newCustomers[i][1] + '\n';
+                }
+                let chooseDisplay1 = parseInt(prompt(listNewCustomer));
+                alert(newCustomers[chooseDisplay1-1].join(' '));
+                break;
+            }
+            case 2: {
+                displayMainMenu();
+                break;
+            }
+        }
+
+    }
+
+    // Hàm chỉnh sửa  thông tin khách hàng đã được thêm;
+
+    function editInfo() {
+        let listNewCustomer = '';
+        let customer = '';
+        for (let i = 0; i < newCustomers.length; i++) {
+            listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' idCard ' + newCustomers[i][1] + '\n';
+        }
+        console.log(newCustomers);
+
+        let chooseEdit = parseInt(prompt(listNewCustomer));
+        console.log(chooseEdit);
+        for (let i = 0; i < newCustomers[chooseEdit-1].length; i++) {
+            customer += (i+1) + ". " + newCustomers[chooseEdit-1][i]  + "\n";
+        }
+        let chooseCustomer = parseInt(prompt('Choose the line you want to edit \n'+customer));
+        let contentEdit = prompt("Enter content you want to change");
+        newCustomers[chooseEdit-1][chooseCustomer-1] = contentEdit;
+    }
+
+    // Hàm xóa thông tin khách hàng đã được thêm;
+
+    function deleteCustomer() {
+        let listNewCustomer = '';
+        for (let i = 0; i < newCustomers.length; i++) {
+            listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' idCard ' + newCustomers[i][1] + '\n';
+        }
+        let chooseDelete = parseInt(prompt("Choose Customer you want to delete \n" + listNewCustomer));
+        if (chooseDelete > 0 && chooseDelete <= newCustomers.length) {
+            newCustomers.splice((chooseDelete - 1), 1);
+        }
+        listNewCustomer = '';
+        if (newCustomers.length !== 0) {
+            for (let i = 0; i < newCustomers.length; i++) {
+                listNewCustomer += (i + 1) + '.' + ' Name: ' + newCustomers[i][0] + ' ' + ' IdCard ' + newCustomers[i][1] + '\n';
+            }
+        } else {
+            listNewCustomer = "Empty List";
+        }
+        alert(listNewCustomer);
+    }
+</script>
+</body>
+</html>

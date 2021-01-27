@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let choose;
+   let check;
+
+    do {
+        check=false
+        choose=parseInt(prompt('1-Add Name customer \n'+'2-Delete Customer'+'\n'+'3.Exit'));
+        switch (choose) {
+            case 1: {
+                addCustomer();
+                break;
+            }
+            case 2:{
+                deleteCustomer();
+                break;
+            }
+            case 3:{
+                check=confirm('Do you want to exit');
+            }
+        }
+    } while (check===false)
+
+   function addCustomer() {
+        let numAddCustomer=parseInt(prompt('Enter number of Customer you want to add'))
+            let nameArr=[];
+            for (let i=0;i<numAddCustomer;i++){
+                nameArr[i]=prompt('input the name of num '+(i+1));
+            }
+            nameArr.sort();
+            let listNewCustomer='';
+            for (let i=0;i<nameArr.length;i++){
+                listNewCustomer+= (i+1)+'.'+nameArr[i]+'\n';
+            }
+            alert(listNewCustomer);
+    }
+    function deleteCustomer() {
+        let listNameDelete=['Alice','Eva','Davise','Ronaldo','Messi'];
+        listNameDelete.sort();
+        let listNewNamDetele='';
+        for (let i=0;i<listNameDelete.length;i++){
+            listNewNamDetele+= (i+1)+'.'+listNameDelete[i]+'\n';
+        }
+        let chooseDelete=prompt('Choose the number of name you want to delete '+'\n'+listNewNamDetele);
+        for (let i=0;i<listNameDelete.length;i++){
+            if (chooseDelete==i){
+                listNameDelete.splice((i-1),1).sort();
+            }
+        }
+        listNameDelete.sort();
+        listNewNamDetele='';
+        for (let i=0;i<listNameDelete.length;i++){
+            listNewNamDetele+= (i+1)+'.'+listNameDelete[i]+'\n';
+        }
+        alert(listNewNamDetele)
+
+    }
+</script>
+</body>
+</html>

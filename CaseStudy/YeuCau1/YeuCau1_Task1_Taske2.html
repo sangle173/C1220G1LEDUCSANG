@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yêu cầu 1</title>
+</head>
+<body>
+<script>
+    let name;
+    let idCard;
+    let birthDay;
+    let email;
+    let address;
+    let typeCustomer;
+    let discount;
+    let according;
+    let rentDays;
+    let typeService;
+    let typeRoom;
+    let totalPay;
+    name=prompt('Enter your Full Name ');
+    idCard=prompt('Enter your IdCard :');
+    birthDay=prompt('Enter your Birthday:');
+    email=prompt('Enter your Email:');
+    address=prompt('Enter your Address');
+    typeCustomer=prompt('Enter type of Customer (Diamond, Platinum, Gold, Silver, Member):');
+    discount=prompt('Enter Discount:');
+    according=prompt('Enter According:');
+    rentDays=prompt('Enter Rent days:');
+    typeService=prompt('Enter type of Service (Villa, House, Room) :');
+    typeRoom=prompt('Enter type of Room (Vip, Business,  Normal):');
+    switch (typeService) {
+        case 'Villa':{
+            totalPay=500*rentDays*(1-discount/100);
+            break;
+        }
+        case  'House':{
+            totalPay=300*rentDays*(1-discount/100);
+            break;
+        }
+        case  'Room':{
+            totalPay=100*rentDays*(1-discount/100);
+            break;
+        }
+        default:{
+            alert('Please try again!');
+        }
+    }
+    //output Customer information
+    alert('1.Full Name: '+name+ '\n'+
+    '2.Id Card: '+idCard+'\n'+
+    '3.Birthday: '+birthDay+'\n'+
+    '4.Email: '+email+'\n'+
+    '5.Address: '+address+'\n'+
+    '6.Type of Customer: '+typeCustomer+'\n'+
+    '7.Discount: '+discount+'\n'+
+    '8.According to: '+according+'\n'+
+    '9.Rent days: '+rentDays+'\n'+
+    '10.Type of Service: '+typeService+'\n'+
+    '11.Type of Room: '+typeRoom+'\n'+
+    '12.Total pay: '+totalPay+'$'+'\n')
+
+</script>
+</body>
+</html>

@@ -7,20 +7,20 @@
 <body>
 <script>
     let name;
-    let cmnd;
+    let idCard;
     let birthDay;
     let email;
     let address;
     let typeCustomer;
     let discount;
-    let pax;
+    let according;
     let rentDays;
     let typeService;
     let typeRoom;
     let totalPay;
     let check=false;
     do {
-        birthDay=prompt('Nhập ngày sinh');
+        birthDay=prompt('Enter your Birthday');
         if (birthDay.charAt(2)==="/"&&birthDay.charAt(5)==="/"){
             let day=birthDay.substring(0,2);
             let month=birthDay.substring(3,5);
@@ -37,12 +37,12 @@
             }
         }
         if (!check){
-            alert("ngày sinh không đún định dạng");
+            alert("Birthday incorrect formating");
         }
     } while (!check)
     check=false;
     do {
-        email=prompt('Nhập email:');
+        email=prompt('Enter email:');
         let countAt=0;
         let countDot=0
         for (let i=0;i<email.length;i++){
@@ -56,42 +56,41 @@
             }
         }
         if (countAt!=1||countDot<1){
-            alert("email bạn nhập không đúng");
+            alert("Email incorrect formating");
         } else {
             check=true;
         }
     } while (!check)
     check=false;
     do {
-        cmnd=prompt('Nhập cmnd');
-        if (!isNaN(cmnd)){
-            cmnd=Number.parseFloat(cmnd);
+        idCard=prompt('Enter IdCard');
+        if (!isNaN(idCard)){
+            idCard=Number.parseFloat(idCard);
         }
-        if (!Number.isInteger(cmnd)){
-            alert("cmnd không không đúng định dạng");
+        if (!Number.isInteger(idCard)){
+            alert("IdCard incorrect formating");
             continue;
         }
-        if (cmnd<10000000||cmnd>99999999){
-            alert("cmnd không không đúng định dạng");
+        if (idCard<10000000||idCard>99999999){
+            alert("IdCard incorrect formating");
             continue;
         }
         check=true;
     } while (!check)
     check=false;
     do {
-        rentDays=prompt('Nhập số ngày thuê:');
+        rentDays=prompt('Enter rent days:');
         if (!isNaN(rentDays)){
-            renDays=Number.parseFloat(rentDays);
-            if (Number.isInteger(renDays)&&rentDays>0){
+            rentDays=Number.parseFloat(rentDays);
+            if (Number.isInteger(rentDays)&&rentDays>0){
                 check=true;
             }
             }
-            if (!check){
-             alert(" không đúng định dang")
+        if (!check){
+             alert("Rent day incorrect formating")
         }
-
     }while (!check)
-    typeService=prompt('Nhập loại dịch vụ:');
+    typeService=prompt('Enter type of Service:');
 
 </script>
 </body>

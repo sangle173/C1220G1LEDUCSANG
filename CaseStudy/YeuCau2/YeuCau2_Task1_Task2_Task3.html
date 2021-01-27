@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yêu cầu 2</title>
+</head>
+<body>
+<script>
+    let name = 'Le Duc Sang';
+    let idCard=1111111;
+    let birthDay = '11/11/1999';
+    let email='abc@abc.com';
+    let address= 'Đà Nẵng';
+    let typeCustomer='Diamond';
+    let discount= 2;
+    let according= 2;
+    let rentDays= 3;
+    let typeService='Villa';
+    let typeRoom= 'Normal';
+    let totalPay=500*rentDays*(1-discount/100);
+    let check=false;
+    do {
+        let chooseDisplay = parseInt(prompt('1.Show Information Customer:' + '\n' +
+            '2.Edit Information Customer:' + '\n' +
+            '3.Show the amount to be paid after discount:'+ '\n'+
+            '4.Exit'));
+        switch (chooseDisplay) {
+            case 1:{
+                alert('1.Full Name: '+name+ '\n'+
+                    '2.Id Card: '+idCard+'\n'+
+                    '3.Birthday: '+birthDay+'\n'+
+                    '4.Email: '+email+'\n'+
+                    '5.Address: '+address+'\n'+
+                    '6.Type of Customer: '+typeCustomer+'\n'+
+                    '7.Discount: '+discount+'\n'+
+                    '8.According to: '+according+'\n'+
+                    '9.Rent days: '+rentDays+'\n'+
+                    '10.Type of Service: '+typeService+'\n'+
+                    '11.Type of Room: '+typeRoom+'\n'+
+                    '12.Total pay: '+totalPay+'$'+'\n');
+                break;
+            }
+            case 2:{
+                let chooseEdit=parseInt(prompt('Choose the line you want to edit: \n'+'1.Full Name: '+name+ '\n'+
+                    '2.Id Card: '+idCard+'\n'+
+                    '3.Birthday: '+birthDay+'\n'+
+                    '4.Email: '+email+'\n'+
+                    '5.Address: '+address+'\n'+
+                    '6.Type of Customer: '+typeCustomer+'\n'+
+                    '7.Discount: '+discount+'\n'+
+                    '8.According to: '+according+'\n'+
+                    '9.Rent days: '+rentDays+'\n'+
+                    '10.Type of Service: '+typeService+'\n'+
+                    '11.Type of Room: '+typeRoom+'\n'+
+                    '12.Total pay: '+totalPay+'$'+'\n'));
+                    switch (chooseEdit) {
+                        case 1:{
+                            name=prompt('Enter new name');
+                            break;
+                        }
+                        case 2:{
+                            idCard=prompt('Enter new Id Card');
+                            break;
+                        }
+                        case 3:{
+                            birthDay=prompt('Enter new Birthday');
+                            break;
+                        }
+                        case 4:{
+                            email=prompt('Enter new email');
+                            break;
+                        }
+                        case 5:{
+                            address= prompt('Enter new address');
+                            break;
+                        }
+                        case 6:{
+                            typeCustomer= prompt('Enter new type of Customer ');
+                            break;
+                        }
+                        case 7:{
+                            discount= prompt('Enter new discount');
+                            break;
+                        }
+                        case 8:{
+                            according= prompt('Enter new according to');
+                            break;
+                        }
+                        case 9:{
+                            rentDays= prompt('Enter new rentdays')
+                            break;
+                        }
+                        case 10:{
+                            typeService= prompt('Enter new type of Service');
+                            break;
+                        }
+                        case 11:{
+                            typeRoom=prompt('Enter new type of Room');
+                            break;
+                        }
+                    }
+                break;
+            }
+            case 3:{
+                switch (address) {
+                    case 'Đà nẵng':{
+                        discount=20;
+                        if (rentDays<=2){
+                            discount=discount+0;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }else if (rentDays<=4){
+                            discount=discount+10;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        } else if (rentDays<=7){
+                            discount=discount+20;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }else {
+                            discount=discount+30;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }
+                        break;
+                    }
+                    case 'Huế':{
+                        discount=10;
+                        if (rentDays<=2){
+                            discount=discount+0;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }else if (rentDays<=4){
+                            discount=discount+10;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        } else if (rentDays<=7){
+                            discount=discount+20;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }else {
+                            discount=discount+30;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }
+                        break;
+                    }
+                    case 'Quảng nam':{
+                        discount=5;
+                        if (rentDays<=2){
+                            discount=discount+0;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }else if (rentDays<=4){
+                            discount=discount+10;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        } else if (rentDays<=7){
+                            discount=discount+20;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }else {
+                            discount=discount+30;
+                            switch (typeCustomer) {
+                                case 'Diamond':{
+                                    discount=discount+15;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Platium':{
+                                    discount=discount+10;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Gold':{
+                                    discount=discount+5;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Silve':{
+                                    discount=discount+2;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+                                case 'Member':{
+                                    discount=discount+0;
+                                    alert('Số tiền được giảm là: '+discount);
+                                    break;
+                                }
+
+                            }
+                        }
+                        break;
+                    }
+                }
+                switch (typeService) {
+                    case 'Villa':{
+                        typeService=500;
+                        totalPay=typeService*rentDays-discount;
+                        alert('số tiền bạn cần trả là :'+totalPay+'$');
+                        break;
+                    }
+                    case 'House':{
+                        typeService=300;
+                        totalPay=typeService*rentDays-discount;
+                        alert('số tiền bạn cần trả là :'+totalPay+'$');
+                        break;
+                    }
+                    case 'Room':{
+                        typeService=100;
+                        totalPay=typeService*rentDays-discount;
+                        alert('số tiền bạn cần trả là :'+totalPay+'$');
+                        break;
+                    }
+                }
+            }
+            case 4:{
+                check=confirm('Do you want to exit');
+                break;
+            }
+        }
+    } while (!check)
+</script>
+</body>
+</html>
